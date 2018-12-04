@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SpaceP</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet"  href="main.css">
+</head>
+<body>
+	<header>
+		<img class ='logo'src="img/logo.png" alt="Logo">
+		<nav>
+			<a href="#">Расписание</a>
+			<a href="#">Скоро в прокате</a>
+			<a href="#">Акции</a>
+		</nav>
+
+		<div class="phone">
+			<div class="phone__elem"><img src="img/clock.png" alt="" width="20" height="20"><p> пн-вс с 10:00-01:00 </p></div>
+			<div class="phone__elem"><img src="img/phone.png" alt="" width="20" height="20"><p>+38 (095) 56 47 247</p></div> <!-- отступы и иконки -->
+		</div>
+
+		<div class="office" id="office"><a href="#">
+			<div class="phone__elem"><img  src="img/user.png" width="35" height="35" alt=""></div> <!--  картинка хуйня -->
+			<div class="phone__elem"> <p >Личный кабинет</p></div></a> 
+		</div> 
+	</header>
+
+	<section class ="main">
+
+
+		<div class="about">
+		<h1>Веном</h1> <!-- название фильма -->
+		<p>Ужасы, фантастика</p></div>
+		<a href="<!-- sample.html -->"><img src="img/play.png" width="134" height="134" alt=""></a>
+        <div class="about">
+		<a href=""><button>Купить билет</button></a>
+		<div class="wrapper">
+			<p class="p">Описание фильма</p>
+			<hr>
+		</div>
+		
+	</div>
+	</section>
+	<hr>
+	<!-- Форма входа в личный кабинет -->
+	<section id='obj'class="form">
+		 <form>
+		   <h3>Вход в личный кабинет</h3>
+		   <hr>
+		   	<br/>
+		    <label for="email">E-mail:</label>
+		  	<input type="text" id="email"/>
+		  	<br/><br/>
+
+		    <label for="password">Пароль:</label>
+		  	<input type="password" id="password" />
+		  	<img src="img/hide.png">
+		  	<br/><br/>
+		  <button type="submit">Войти</button>
+		  <br/><br/>
+		  <hr class="hr2">
+		  <a id="obj_2" href="#"><p>Создать личный кабинет</p></a>
+		 </form>
+	</section>
+
+	<section id='obj2'class="form reg">
+		 <form>
+		   <h3>Регистрация</h3>
+		   <hr>
+		   	<br/>
+		   	<div class="etap">
+		   		<p>1 этап</p>
+		   		<p>2 этап</p> 
+		   	</div>
+		   	<br/>
+		    <label for="name">Имя:</label>
+		  	<input type="text" id="name"/>
+		  	<br/><br/>
+		    <label for="lastname">Фамилия:</label>
+		  	<input type="lastname" id="lastname" />
+		  	<br/><br/>
+		  <button id="obj_3" type="submit">Далее</button>		  
+		 </form>
+	</section> 
+
+	<section id='obj3'class="form reg_2">
+		 <form>
+		   <h3>Регистрация</h3>
+		   <hr>
+		   	<br/>
+		   	<div class="etap">
+		   		<p>1 этап</p> 
+		   		<p>2 этап</p> 
+		   	</div>		
+		   	<br/>
+		    <label for="email">E-mail:</label>
+		  	<input type="text" id="email_1"/>
+		  	<br/><br/>
+		    <label for="password">Пароль:</label>
+		  	<input type="password" id="password_reg" />
+		  	<br/><br/>
+		  <button type="submit">Далее</button>		  
+		 </form>
+	</section> 
+
+
+	<!-- показываем форму js ? нужно переделать на angular7()  -->
+<script type="text/javascript">
+     var btn=document.getElementById('office');
+     var form=document.getElementById('obj');
+     var obj_2=document.getElementById('obj_2');
+     var obj_3=document.getElementById('obj_3');
+     btn.onclick=function(){
+      obj.style.display = 'block';
+     }
+     obj_2.onclick=function(){
+     	 obj2.style.display = 'block';
+     }
+      obj_3.onclick=function(){
+     	 obj3.style.display = 'block';
+     }
+   </script>
+
+
+
+</body>
+</html>
